@@ -17,5 +17,5 @@ def createdeck():
             ["S " + item for item in cards]
             ]
 
-def first_cards()
-    
+def first_cards():
+    return
