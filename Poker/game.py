@@ -7,15 +7,15 @@ player1 = ""
 player2 = ""
 
 def createdeck():
-    global deck
     with open("Poker/deck.txt") as file:
         cards = file.readlines()
         cards = [line.rstrip('\n') for line in cards]
-    deck = [["D " + item for item in cards],
-            ["H " + item for item in cards],
-            ["C " + item for item in cards],
-            ["S " + item for item in cards]
+    deck = [[item + " of Diamonds" for item in cards],
+            [item + " of Hearts" for item in cards],
+            [item + " of Clovers" for item in cards],
+            [item + " of Spades" for item in cards]
             ]
+    return deck
 
 def first_cards():
     return

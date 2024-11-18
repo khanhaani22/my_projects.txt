@@ -1,6 +1,4 @@
-import random
 import game
-
 def gui_1():
     print("-=+=-=+=-=+=-=+=-")
     print("------POKER------")
@@ -30,6 +28,7 @@ def game_gui():
       
 
 def seq1():
+    import random
     createdeck()
     first_cards()
     game_gui()
